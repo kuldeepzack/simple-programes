@@ -1,0 +1,84 @@
+import java.io.ObjectInputStream.GetField;
+import java.util.*;
+
+ class Employee {
+	private String name;
+	private int age;
+
+	public void setName(String name) {
+		this.name = name;
+
+	}
+
+	public String getName() {
+		return (name);
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getAge() {
+		return (age);
+	}
+	public static void main(String[] args) {
+		while(true) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Staff name");
+		String na = sc.nextLine();
+		System.out.println("Enter you age");
+		int ag = sc.nextInt();
+		System.out.println("Enter your room no");
+		int n = sc.nextInt();
+		Manager obj = new Manager();
+		Ceo obj1 = new Ceo();
+		System.out.println("Enter your salary");
+		long s = sc.nextLong();
+		System.out.println("Enter manager name ");
+		String nam = sc.nextLine();		
+	
+		obj.setName(na);
+		obj.setAge(ag);
+		obj.setNo(n);
+		obj1.setSa(s);
+		obj1.setNo(n);
+		obj.setName(nam);
+		
+		System.out.println(" ");
+		System.out.println("Name is " + obj.getName());
+		System.out.println("Age is " + obj.getAge());
+		System.out.println("Room no is " + obj.getNo());
+		System.out.println("Salary is "+ obj1.getSa());
+		System.out.println("Room no is " + obj1.getNo());
+		System.out.println(" manager name is "+obj.getName());
+		}
+
+	}
+}
+
+
+
+class Manager extends Employee {
+	int no;
+
+	public void setNo(int no) {
+		this.no=no;
+	}
+
+	public int getNo() {
+		return (no);
+	}
+}
+//3 class
+	class Ceo extends Manager{
+	long salary;
+	
+	public void setSa(long salary){
+	this.salary=salary;
+	}
+	
+	public long getSa(){
+	return(salary);
+	}
+	}
+	
