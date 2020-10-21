@@ -1,0 +1,34 @@
+import java.util.*;
+public class Scaaaner {
+	String name;
+	String add;
+	int id;
+	private char[] ad;
+	private char[] nam;
+	
+	public Scaaaner(String name, String add) {
+		this.name=name;
+		this.add=add;		
+	}
+	public static void main(String[] args) {
+
+	//Scaaaner obj1 = new Scaaaner(nam , ad);
+	Scanner obj = new Scanner(System.in);
+	System.out.println("enter  you name");
+	System.out.println("enter your add ");
+	System.out.println("enter your id");
+	String nam = obj.nextLine();
+	String ad = obj.nextLine();
+	int i = obj.nextInt();
+	Scaaaner obj1 = new Scaaaner(nam , ad);
+	System.out.println("your name is"+" "+nam);
+	System.out.println("your addreas is"+" "+ad);
+	System.out.println("your employ id is"+" "+i);
+	System.out.println(obj1.nam);
+	System.out.println(obj1.ad);
+	
+	
+	
+	}
+	
+}
