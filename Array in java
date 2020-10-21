@@ -1,6 +1,6 @@
 import java.util.*;
 
-public clas Array2 {
+public class Array2 {
 
 	public static void main(String[] args ){
 	Scanner s = new Scanner(System.in);
@@ -14,13 +14,13 @@ public clas Array2 {
 	
 
     System.out.println(Arrays.toString(a));
-    Scanner p = new Scannr(System.in);
+    Scanner p = new Scanner(System.in);
     System.out.println("enter the postion in which you want to insert the element");
     int poss = p.nextInt();
      Scanner n = new Scanner(System.in);
      System.out.println("enter the element that you want to insert");
     int num = n.nextInt();
-    if(poss<0 poss>len) {
+    if(poss<0 || poss>len) {
     	System.out.println("invalid choice");
     }
     else {
