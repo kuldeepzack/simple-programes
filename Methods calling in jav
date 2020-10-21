@@ -13,7 +13,7 @@ public class SimpleMethod {
 
 	public static void main(String[] args) {
 		
-		while){
+		while(true){
 		Scanner obj = new Scanner(System.in);
 		System.out.println("enter you name");
 		System.out.println("enter your college code");
@@ -24,4 +24,6 @@ public class SimpleMethod {
 
 		myMethod(username, code);
 		System.out.println(19078 + 12);
+		}
+		}
 
